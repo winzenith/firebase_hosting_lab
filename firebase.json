@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/greeting",
+        "function": "helloWorld"
+      },
+      {
+        "source": "/ping",
+        "function": "ping"
+      },
+      {
+        "source": "/polo",
+        "function": "polo"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}
